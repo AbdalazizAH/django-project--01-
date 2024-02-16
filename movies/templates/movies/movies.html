@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Movies</title>
+    </head>
+    <body>
+        <h1>Movies</h1>
+        <ul>
+            {% for movie in movies %}
+            <li><a href={{movie.id}}>{{movie.title}}</a></li>
+            {% endfor %}
+        </ul>
+        <a href="/movies/add">Add a movie</a>
+    </body>
+</html>
